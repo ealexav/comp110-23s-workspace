@@ -21,11 +21,11 @@ def emojified(word_guess: str, secret_word: str) -> str:
     result: str = ""
     while idx_guess < len(secret_word):
         if word_guess[idx_guess] == secret_word[idx_guess]:
-            result = GREEN_BOX + 1
+            result = result + GREEN_BOX
         if contains_char(secret_word, word_guess[idx_guess]) and not (word_guess[idx_guess]) == secret_word[idx_guess]:
-            result = YELLOW_BOX + 1
+            result = result + YELLOW_BOX
         if not contains_char(secret_word, word_guess[idx_guess]) and not (word_guess[idx_guess] == secret_word):
-            result = WHITE_BOX + 1
+            result = result + WHITE_BOX
         idx_guess = idx_guess + 1
     return result
 def input_guess(length_guess: int) -> str:
