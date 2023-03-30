@@ -5,7 +5,7 @@ __author__ = "730404725"
 player: str = ""
 points: int
 answer: list[str] = []
-QUIZ_RESULT: str = "\U+1F497"
+QUIZ_RESULT: str = "\U0001F7E9"
 
 def main() -> None:
     """Beginning of the quiz."""
